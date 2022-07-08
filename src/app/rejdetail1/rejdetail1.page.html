@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+   
+    <ion-buttons [routerLink]="['/history']" slot="start">
+      <ion-icon color="dark"  size="large" name="arrow-back"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="secondary">
+ 
+  <ion-card >
+
+    <ion-item color="secondary">
+      <ion-avatar slot="start">
+        <img src="assets/avatar.jpg">
+      </ion-avatar>
+      <ion-label color="dark">
+        <h3>Jeffery</h3>
+        <p>Marketing Department</p>     
+      </ion-label>
+    </ion-item>
+   </ion-card>
+
+   <ion-card>
+    <ion-item>
+    <ion-label>
+      <h3>Reason</h3>
+      <p>Holiday Leave</p>     
+       
+      <h3>Duration</h3>
+      <p>30th May 2022-2nd June 2022</p>   
+
+      <h3>Attachment</h3>
+      <p>-</p>   
+    </ion-label>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <div></div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-button color="danger">
+        Rejected
+      </ion-button></div>
+    </ion-col>
+    <ion-col>
+      <div></div>
+    </ion-col>
+  </ion-row>
+
+
+  
+ 
+   </ion-card>
+
+   <ion-label color="dark">Remarks:</ion-label>
+   <ion-card>
+    <p>Rejected.Holidays are not allowed </p>
+   </ion-card>
+
+</ion-content>

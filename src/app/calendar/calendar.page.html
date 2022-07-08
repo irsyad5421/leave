@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    
+
+    <ion-buttons [routerLink]="['/req']" slot="start">
+      <ion-icon size="large" name="list"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons [routerLink]="['/home']" slot="end">
+      <ion-icon size="large" name="home"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-datetime presentation="date"
+  dayValues="5,10,15,20,25,30"></ion-datetime>
+</ion-content>

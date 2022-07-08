@@ -1,20 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="secondary">
+  
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="secondary">
+  <ion-text color="dark">
+    <strong> Hi, Name</strong>
+  </ion-text>
+  <ion-text color="dark">
+    <p> Welcome !</p>
+  </ion-text>
+  
+<ion-grid size="fixed">
+ 
+ 
+  <ion-row>
+    
+    <ion-col size="6">
+      <ion-card [routerLink]="['/req']"  >
+      
+        <img src="assets/req.png" width="100%">
+      </ion-card>
+    </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-col size="6">
+    <ion-card [routerLink]="['/approve']" >
+      <img src="assets/approve.png" width="100%">
+    </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-card [routerLink]="['/reject']">
+        <img src="assets/reject.png" width="100%">
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+    <ion-card [routerLink]="['/history']">
+      <img src="assets/history.png" width="100%">
+    </ion-card>
+    </ion-col>
+ 
+  </ion-row>
+
+  
+ <ion-card [routerLink]="['/data']" >
+    <img src="assets/data.png" width="100%">
+  </ion-card>
+  
+</ion-grid>
 </ion-content>
+     
+
